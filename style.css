@@ -9,205 +9,99 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-
   color: var(--ink);
-
   font-family: Poppins, Arial, sans-serif;
 
   background:
-    radial-gradient(
-      circle at 15% 15%,
-      #ffe8ef 0,
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 90% 80%,
-      #fde1c8 0,
-      transparent 26%
-    ),
-    linear-gradient(
-      135deg,
-      #fff7f7,
-      #fffdf8
-    );
+    radial-gradient(circle at 15% 15%, #ffe8ef 0, transparent 30%),
+    radial-gradient(circle at 90% 80%, #fde1c8 0, transparent 26%),
+    linear-gradient(135deg, #fff7f7, #fffdf8);
 }
-
-
-/* =========================================
-   MAIN HERO
-   ========================================= */
 
 .hero {
   min-height: 100vh;
-
   display: grid;
   place-items: center;
-
   padding: 32px 18px;
-
   position: relative;
 }
 
 .hero::before {
   content: "";
-
   position: absolute;
-
   inset: 16px;
-
-  border:
-    1px solid
-    rgba(217, 75, 114, 0.27);
-
+  border: 1px solid rgba(217, 75, 114, 0.27);
   border-radius: 28px;
-
-  pointer-events: none;
 }
-
-
-/* =========================================
-   MAIN CARD
-   ========================================= */
 
 .card {
   width: min(760px, 100%);
-
   padding: 58px 38px 45px;
-
   text-align: center;
 
-  background:
-    rgba(255, 255, 255, 0.68);
-
-  border:
-    1px solid white;
-
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid white;
   border-radius: 30px;
 
-  box-shadow:
-    0 22px 70px
-    rgba(101, 24, 51, 0.16);
+  box-shadow: 0 22px 70px rgba(101, 24, 51, 0.16);
 
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 
   z-index: 1;
-
-  /*
-   * Important:
-   * Do not use overflow:hidden here.
-   * It can clip the signature.
-   */
-  overflow: visible;
 }
-
-
-/* =========================================
-   SMALL TOP TEXT
-   ========================================= */
 
 .kicker {
   letter-spacing: 0.19em;
-
   text-transform: uppercase;
-
   font-size: 0.72rem;
-
   font-weight: 600;
-
   color: var(--rose);
-
   margin: 0 0 14px;
 }
 
-
-/* =========================================
-   HEARTS
-   ========================================= */
-
 .hearts {
   font-size: 1.45rem;
-
   letter-spacing: 0.35rem;
-
   color: var(--rose);
-
   margin-bottom: 12px;
 }
 
-
-/* =========================================
-   RIYA NAME
-   ========================================= */
-
 .script {
   font:
-    clamp(3.5rem, 10vw, 6.5rem)
-    / 0.85
+    clamp(3.5rem, 10vw, 6.5rem) / 0.85
     "Great Vibes",
     cursive;
 
   color: var(--wine);
-
   margin: 14px 0 10px;
 }
 
-
-/* =========================================
-   BIRTHDAY HEADING
-   ========================================= */
-
 h2 {
   font:
-    600
-    clamp(1.35rem, 4vw, 2.2rem)
-    / 1.25
+    600 clamp(1.35rem, 4vw, 2.2rem) / 1.25
     "Playfair Display",
     serif;
 
   margin: 0 0 24px;
 }
 
-
-/* =========================================
-   MAIN MESSAGE
-   ========================================= */
-
 .message {
   max-width: 570px;
-
   margin: 0 auto;
 
-  font-size:
-    clamp(
-      0.96rem,
-      2.5vw,
-      1.08rem
-    );
-
+  font-size: clamp(0.96rem, 2.5vw, 1.08rem);
   line-height: 1.85;
 
   color: #69364b;
 }
 
-
-/* =========================================
-   DIVIDER
-   ========================================= */
-
 .divider {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 13px;
@@ -215,7 +109,6 @@ h2 {
   margin: 27px auto;
 
   color: var(--gold);
-
   font-size: 1.2rem;
 }
 
@@ -224,7 +117,6 @@ h2 {
   content: "";
 
   height: 1px;
-
   width: 80px;
 
   background:
@@ -236,14 +128,8 @@ h2 {
     );
 }
 
-
-/* =========================================
-   LOVE BUTTON
-   ========================================= */
-
 button {
   border: 0;
-
   border-radius: 999px;
 
   padding: 14px 25px;
@@ -257,99 +143,43 @@ button {
 
   color: white;
 
-  font-family:
-    Poppins,
-    sans-serif;
-
+  font-family: Poppins, sans-serif;
   font-weight: 600;
-
   font-size: 0.94rem;
 
   cursor: pointer;
 
   box-shadow:
-    0 10px 22px
-    rgba(138, 37, 72, 0.27);
+    0 10px 22px rgba(138, 37, 72, 0.27);
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: 0.25s;
 
   margin-top: 28px;
 }
 
 button:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 14px 28px
-    rgba(138, 37, 72, 0.32);
 }
-
-button:active {
-  transform: translateY(0);
-}
-
-
-/* =========================================
-   BIRTHDAY SECRET MESSAGE
-   =========================================
-
-   IMPORTANT FIX:
-
-   We are NOT using max-height here.
-
-   Earlier max-height was causing
-   "Rajat" to get clipped.
-
-   The message now uses opacity +
-   visibility + transform.
-   ========================================= */
 
 .secret {
+  max-height: 0;
   opacity: 0;
 
-  visibility: hidden;
+  overflow: hidden;
+
+  transition: 0.55s ease;
 
   max-width: 570px;
 
-  margin: 0 auto;
-
-  transform:
-    translateY(-12px);
-
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease,
-    margin-top 0.6s ease;
+  margin: auto;
 }
-
-
-/* =========================================
-   SECRET MESSAGE VISIBLE STATE
-   ========================================= */
 
 .secret.show {
+  max-height: 220px;
   opacity: 1;
 
-  visibility: visible;
-
   margin-top: 23px;
-
-  transform:
-    translateY(0);
-
-  /*
-   * IMPORTANT:
-   * Never hide overflowing content here.
-   */
-  overflow: visible;
 }
-
-
-/* =========================================
-   LOVE NOTE BOX
-   ========================================= */
 
 .note {
   padding: 20px;
@@ -368,41 +198,21 @@ button:active {
     rgba(217, 75, 114, 0.16);
 
   font:
-    500
-    1.06rem
-    / 1.75
+    500 1.06rem / 1.75
     "Playfair Display",
     serif;
 }
 
-
-/* =========================================
-   SIGNATURE
-   ========================================= */
-
 .sign {
-  font-family:
+  font:
+    2.6rem
     "Great Vibes",
     cursive;
 
-  font-size: 2.8rem;
-
-  line-height: 1.35;
-
   color: var(--wine);
 
-  margin:
-    25px 0 10px;
-
-  padding-bottom: 15px;
-
-  display: block;
+  margin: 13px 0 0;
 }
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
 
 .footer {
   margin: 28px 0 0;
@@ -412,11 +222,6 @@ button:active {
   font-size: 0.84rem;
 }
 
-
-/* =========================================
-   FLOATING HEARTS
-   ========================================= */
-
 .float {
   position: fixed;
 
@@ -425,26 +230,17 @@ button:active {
   opacity: 0.35;
 
   animation:
-    rise
-    linear
-    infinite;
+    rise linear infinite;
 
   color: var(--rose);
-
-  pointer-events: none;
 }
-
-
-/* =========================================
-   FLOATING HEART ANIMATION
-   ========================================= */
 
 @keyframes rise {
 
   from {
     transform:
       translateY(110vh)
-      rotate(0deg);
+      rotate(0);
   }
 
   to {
@@ -454,92 +250,16 @@ button:active {
   }
 }
 
-
-/* =========================================
-   HEARTS CREATED BY JAVASCRIPT
-   ========================================= */
-
-.burst-heart {
-  position: fixed;
-
-  color: #d94b72;
-
-  pointer-events: none;
-
-  z-index: 5;
-
-  transition:
-    1.4s ease;
-}
-
-
-/* =========================================
-   TABLET / MOBILE
-   ========================================= */
-
 @media (max-width: 480px) {
 
-  .hero {
-    padding: 20px 12px;
+  .card {
+    padding:
+      48px 23px 35px;
   }
 
   .hero::before {
     inset: 9px;
 
     border-radius: 20px;
-  }
-
-  .card {
-    padding:
-      48px 23px 35px;
-
-    border-radius: 24px;
-  }
-
-  .message {
-    line-height: 1.75;
-  }
-
-  .note {
-    padding: 18px;
-
-    font-size: 1rem;
-  }
-
-  .sign {
-    font-size: 2.5rem;
-
-    line-height: 1.35;
-  }
-
-  .divider::before,
-  .divider::after {
-    width: 55px;
-  }
-}
-
-
-/* =========================================
-   VERY SMALL PHONES
-   ========================================= */
-
-@media (max-width: 360px) {
-
-  .card {
-    padding-left: 18px;
-
-    padding-right: 18px;
-  }
-
-  .script {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 1.35rem;
-  }
-
-  .sign {
-    font-size: 2.3rem;
   }
 }
