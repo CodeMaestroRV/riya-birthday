@@ -1,1 +1,262 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>Happy Birthday, Riya ❤️</title> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> <style> :root { --wine: #651833; --rose: #d94b72; --gold: #e9b75a; --ink: #3c1830; } * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; overflow-x: hidden; color: var(--ink); font-family: Poppins, Arial, sans-serif; background: radial-gradient(circle at 15% 15%, #ffe8ef 0, transparent 30%), radial-gradient(circle at 90% 80%, #fde1c8 0, transparent 26%), linear-gradient(135deg, #fff7f7, #fffdf8); } .hero { min-height: 100vh; display: grid; place-items: center; padding: 32px 18px; position: relative; } .hero::before { content: ""; position: absolute; inset: 16px; border: 1px solid rgba(217, 75, 114, 0.27); border-radius: 28px; } .card { width: min(760px, 100%); padding: 58px 38px 45px; text-align: center; background: rgba(255, 255, 255, 0.68); border: 1px solid white; border-radius: 30px; box-shadow: 0 22px 70px rgba(101, 24, 51, 0.16); backdrop-filter: blur(10px); z-index: 1; } .kicker { letter-spacing: 0.19em; text-transform: uppercase; font-size: 0.72rem; font-weight: 600; color: var(--rose); margin: 0 0 14px; } .hearts { font-size: 1.45rem; letter-spacing: 0.35rem; color: var(--rose); margin-bottom: 12px; } .script { font: clamp(3.5rem, 10vw, 6.5rem)/0.85 "Great Vibes", cursive; color: var(--wine); margin: 14px 0 10px; } h2 { font: 600 clamp(1.35rem, 4vw, 2.2rem)/1.25 "Playfair Display", serif; margin: 0 0 24px; } .message { max-width: 570px; margin: 0 auto; font-size: clamp(0.96rem, 2.5vw, 1.08rem); line-height: 1.85; color: #69364b; } .divider { display: flex; align-items: center; justify-content: center; gap: 13px; margin: 27px auto; color: var(--gold); font-size: 1.2rem; } .divider::before, .divider::after { content: ""; height: 1px; width: 80px; background: linear-gradient(90deg, transparent, var(--gold), transparent); } button { border: 0; border-radius: 999px; padding: 14px 25px; background: linear-gradient(135deg, var(--wine), var(--rose)); color: white; font-family: Poppins, sans-serif; font-weight: 600; font-size: 0.94rem; cursor: pointer; box-shadow: 0 10px 22px rgba(138, 37, 72, 0.27); transition: 0.25s; margin-top: 28px; } button:hover { transform: translateY(-2px); } .secret { max-height: 0; opacity: 0; overflow: hidden; transition: 0.55s ease; max-width: 570px; margin: auto; } .secret.show { max-height: 220px; opacity: 1; margin-top: 23px; } .note { padding: 20px; background: linear-gradient(135deg, #fff0f4, #fffaf0); border-radius: 18px; border: 1px solid rgba(217, 75, 114, 0.16); font: 500 1.06rem/1.75 "Playfair Display", serif; } .sign { font: 2.6rem "Great Vibes", cursive; color: var(--wine); margin: 13px 0 0; } .footer { margin: 28px 0 0; color: #a46a7d; font-size: 0.84rem; } .float { position: fixed; z-index: 0; opacity: 0.35; animation: rise linear infinite; color: var(--rose); } @keyframes rise { from { transform: translateY(110vh) rotate(0); } to { transform: translateY(-12vh) rotate(300deg); } } @media (max-width: 480px) { .card { padding: 48px 23px 35px; } .hero::before { inset: 9px; border-radius: 20px; } } </style> </head> <body> <div class="float" style="left:8%; font-size:27px; animation-duration:14s;">♥</div> <div class="float" style="left:26%; font-size:18px; animation-duration:11s; animation-delay:-4s;">♥</div> <div class="float" style="left:75%; font-size:30px; animation-duration:17s; animation-delay:-9s;">♥</div> <div class="float" style="left:91%; font-size:20px; animation-duration:13s; animation-delay:-6s;">♥</div> <main class="hero"> <section class="card"> <p class="kicker">A little birthday love, just for you</p> <div class="hearts">♥ ♥ ♥</div> <h1 class="script">Riya</h1> <h2>Happy Birthday, My Love</h2> <p class="message"> Today is all about the wonderful person who makes ordinary moments feel extraordinary. Your smile is my favourite place, and I am endlessly grateful that you are in my life. </p> <div class="divider">✦</div> <p class="message"> May this year bring you every dream you whisper to the stars, every happiness your heart deserves, and a thousand beautiful reasons to smile. </p> <button id="reveal">Open your birthday note ♥</button> <div id="secret" class="secret"> <div class="note"> Riya, you are the most beautiful chapter of my life. I promise to keep choosing you, celebrating you, and loving you through every season. Happy Birthday, jaan. ❤️ </div> <p class="sign">Forever yours,<br>Rajat</p> </div> <p class="footer">Made with all my love for you ✨</p> </section> </main> <script> document.getElementById("reveal").addEventListener("click", function () { document.getElementById("secret").classList.add("show"); this.textContent = "I love you, Riya ♥"; for (let i = 0; i < 35; i++) { const heart = document.createElement("span"); heart.textContent = "♥"; heart.style.cssText = position: fixed; left: ${Math.random() * 100}vw; top: ${Math.random() * 100}vh; color: #d94b72; font-size: ${12 + Math.random() * 20}px; pointer-events: none; z-index: 5; transition: 1.4s ease; ; document.body.appendChild(heart); requestAnimationFrame(() => { heart.style.transform = translateY(${-70 - Math.random() * 120}px) rotate(${Math.random() * 360}deg); heart.style.opacity = 0; }); setTimeout(() => heart.remove(), 1500); } }); </script> </body> </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Riya ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --wine: #651833;
+      --rose: #d94b72;
+      --gold: #e9b75a;
+      --ink: #3c1830;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--ink);
+      font-family: Poppins, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, #ffe8ef 0, transparent 30%),
+        radial-gradient(circle at 90% 80%, #fde1c8 0, transparent 26%),
+        linear-gradient(135deg, #fff7f7, #fffdf8);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 18px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(217, 75, 114, 0.27);
+      border-radius: 28px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      padding: 58px 38px 45px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.68);
+      border: 1px solid white;
+      border-radius: 30px;
+      box-shadow: 0 22px 70px rgba(101, 24, 51, 0.16);
+      backdrop-filter: blur(10px);
+      z-index: 1;
+    }
+
+    .kicker {
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--rose);
+      margin: 0 0 14px;
+    }
+
+    .hearts {
+      font-size: 1.45rem;
+      letter-spacing: 0.35rem;
+      color: var(--rose);
+      margin-bottom: 12px;
+    }
+
+    .script {
+      font: clamp(3.5rem, 10vw, 6.5rem)/0.85 "Great Vibes", cursive;
+      color: var(--wine);
+      margin: 14px 0 10px;
+    }
+
+    h2 {
+      font: 600 clamp(1.35rem, 4vw, 2.2rem)/1.25 "Playfair Display", serif;
+      margin: 0 0 24px;
+    }
+
+    .message {
+      max-width: 570px;
+      margin: 0 auto;
+      font-size: clamp(0.96rem, 2.5vw, 1.08rem);
+      line-height: 1.85;
+      color: #69364b;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      margin: 27px auto;
+      color: var(--gold);
+      font-size: 1.2rem;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      height: 1px;
+      width: 80px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 25px;
+      background: linear-gradient(135deg, var(--wine), var(--rose));
+      color: white;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 0.94rem;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(138, 37, 72, 0.27);
+      transition: 0.25s;
+      margin-top: 28px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    .secret {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: 0.55s ease;
+      max-width: 570px;
+      margin: auto;
+    }
+
+    .secret.show {
+      max-height: 220px;
+      opacity: 1;
+      margin-top: 23px;
+    }
+
+    .note {
+      padding: 20px;
+      background: linear-gradient(135deg, #fff0f4, #fffaf0);
+      border-radius: 18px;
+      border: 1px solid rgba(217, 75, 114, 0.16);
+      font: 500 1.06rem/1.75 "Playfair Display", serif;
+    }
+
+    .sign {
+      font: 2.6rem "Great Vibes", cursive;
+      color: var(--wine);
+      margin: 13px 0 0;
+    }
+
+    .footer {
+      margin: 28px 0 0;
+      color: #a46a7d;
+      font-size: 0.84rem;
+    }
+
+    .float {
+      position: fixed;
+      z-index: 0;
+      opacity: 0.35;
+      animation: rise linear infinite;
+      color: var(--rose);
+    }
+
+    @keyframes rise {
+      from { transform: translateY(110vh) rotate(0); }
+      to { transform: translateY(-12vh) rotate(300deg); }
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 48px 23px 35px; }
+      .hero::before { inset: 9px; border-radius: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="float" style="left:8%; font-size:27px; animation-duration:14s;">♥</div>
+  <div class="float" style="left:26%; font-size:18px; animation-duration:11s; animation-delay:-4s;">♥</div>
+  <div class="float" style="left:75%; font-size:30px; animation-duration:17s; animation-delay:-9s;">♥</div>
+  <div class="float" style="left:91%; font-size:20px; animation-duration:13s; animation-delay:-6s;">♥</div>
+
+  <main class="hero">
+    <section class="card">
+      <p class="kicker">A little birthday love, just for you</p>
+      <div class="hearts">♥ ♥ ♥</div>
+
+      <h1 class="script">Riya</h1>
+      <h2>Happy Birthday, My Love</h2>
+
+      <p class="message">
+        Today is all about the wonderful person who makes ordinary moments feel extraordinary.
+        Your smile is my favourite place, and I am endlessly grateful that you are in my life.
+      </p>
+
+      <div class="divider">✦</div>
+
+      <p class="message">
+        May this year Radha Rani bless you with every dream you whisper to the stars, every happiness your heart
+        deserves, and a thousand beautiful reasons to smile.
+      </p>
+
+      <button id="reveal">Open your birthday note ♥</button>
+
+      <div id="secret" class="secret">
+        <div class="note">
+          Riya, you are the most beautiful chapter of my life. I promise to keep choosing you,
+          celebrating you, and loving you through every season. Happy Birthday ❤️
+        </div>
+
+        <p class="sign">Forever yours Rajat</p>
+      </div>
+
+      <p class="footer">Made with all my love for you ✨</p>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("reveal").addEventListener("click", function () {
+      document.getElementById("secret").classList.add("show");
+      this.textContent = "I love you, Riya ♥";
+
+      for (let i = 0; i < 35; i++) {
+        const heart = document.createElement("span");
+        heart.textContent = "♥";
+        heart.style.cssText = `
+          position: fixed;
+          left: ${Math.random() * 100}vw;
+          top: ${Math.random() * 100}vh;
+          color: #d94b72;
+          font-size: ${12 + Math.random() * 20}px;
+          pointer-events: none;
+          z-index: 5;
+          transition: 1.4s ease;
+        `;
+
+        document.body.appendChild(heart);
+
+        requestAnimationFrame(() => {
+          heart.style.transform = `translateY(${-70 - Math.random() * 120}px)
+                                  rotate(${Math.random() * 360}deg)`;
+          heart.style.opacity = 0;
+        });
+
+        setTimeout(() => heart.remove(), 1500);
+      }
+    });
+  </script>
+</body>
+</html>
